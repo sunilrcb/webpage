@@ -13,7 +13,7 @@ header {
 }
 
 nav a {
-  color: white;
+  color: #0B0101;
   margin: 0 15px;
   text-decoration: none;
 }
@@ -50,4 +50,5 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
