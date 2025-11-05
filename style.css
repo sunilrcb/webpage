@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #0B0101;
+  background-color:#0077b6;
   color: white;
   padding: 15px;
   text-align: center;
@@ -50,5 +50,6 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
 
