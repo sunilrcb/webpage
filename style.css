@@ -1,13 +1,17 @@
-/* Reset & Base */
+/* === RESET & BASE === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0a001f, #001f29, #1a0029);
+  background: linear-gradient(135deg, #08001a, #001f29, #1a0029);
   color: #f1f3f6;
   line-height: 1.7;
   min-height: 100vh;
@@ -15,15 +19,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation */
+/* === NAVIGATION === */
 nav {
   background: rgba(10, 10, 20, 0.9);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  border-bottom: 2px solid #222;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
 }
 
@@ -31,18 +34,19 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
 nav ul li a {
-  position: relative;
   color: #e0e0e0;
   text-decoration: none;
   font-weight: 500;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 nav ul li a:hover {
@@ -57,12 +61,13 @@ nav ul li a.active {
   box-shadow: 0 0 20px rgba(44, 182, 125, 0.4);
 }
 
-/* Container */
+/* === CONTAINER === */
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
+  padding: 2rem;
   animation: fadeIn 0.8s ease-in;
+  text-align: center;
 }
 
 @keyframes fadeIn {
@@ -70,11 +75,11 @@ nav ul li a.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Typography */
+/* === TYPOGRAPHY === */
 h1, h2, h3 {
-  text-align: center;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 h1 {
@@ -96,53 +101,30 @@ h3 {
   font-size: 1.4rem;
 }
 
-/* Hero Section */
+/* === HERO SECTION === */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
   background: linear-gradient(135deg, rgba(127, 90, 240, 0.2), rgba(44, 182, 125, 0.15));
   border-radius: 20px;
+  margin-bottom: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-  margin-bottom: 3rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   color: #cfd2ff;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Card / Section Base */
-.bio-section, .resume-section, .education-section, .project-card {
+/* === SECTIONS === */
+.bio-section,
+.resume-section,
+.education-section,
+.project-card {
   background: linear-gradient(145deg, rgba(50, 50, 80, 0.6), rgba(20, 20, 40, 0.7));
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  margin-bottom: 2rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.bio-section:hover,
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(127, 90, 240, 0.4);
-}
-
-/* Skills */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  justify-content: center;
-}
-
-.skill-tag {
-  background: linear-gradient(135deg, #7f5af0, #00b7ff);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  border: none;
-  font-size: 0.9rem;
-  box-shadow: 0 0 10px rgba(0, 183, 255, 0.3);
-  transition: transform 0
+  border: 1px solid rgba(255, 255, 25
